@@ -1,0 +1,17 @@
+package composition;
+
+public class Waitress {
+
+	MenuComponent allMenues;
+	
+	
+	
+	public Waitress(MenuComponent allMenues) {
+		// TODO Auto-generated constructor stub
+		this.allMenues = allMenues;
+	}
+	
+	public void printMenu() {
+		allMenues.print();
+	}
+}

@@ -1,0 +1,21 @@
+package facade;
+
+import subsystem.CdPlayer;
+import subsystem.TV;
+
+public class testFacade {
+	
+	public static void main(String[] args) {
+		/**
+		 * Normally the Client is this method and gets a Facade
+		 * without having to initate the components
+		 */
+		CdPlayer cdPlay = new CdPlayer();
+		TV tv = new TV();
+		
+		HomeTheaterFacade fac = new HomeTheaterFacade(cdPlay, tv);
+		
+		fac.watchMovie();
+	}
+
+}

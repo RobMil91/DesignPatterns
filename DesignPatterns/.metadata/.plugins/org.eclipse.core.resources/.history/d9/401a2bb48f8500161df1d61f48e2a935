@@ -1,0 +1,14 @@
+package teaExample;
+
+public class testTemplateMethod {
+
+	
+	public static void main(String[] args) {
+		
+		
+		Tea tea = new Tea();
+		
+		//call the entire Template Method
+		tea.prepareRecipe();
+	}
+}

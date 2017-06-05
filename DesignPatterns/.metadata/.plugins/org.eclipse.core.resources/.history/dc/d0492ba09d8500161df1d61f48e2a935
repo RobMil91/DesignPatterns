@@ -1,0 +1,12 @@
+package composition;
+
+/**
+ * also inherites the MenuComponent 
+ * so it can be identified as one
+ * @author robin
+ *
+ */
+public class Menu extends MenuComponent{
+
+	
+}

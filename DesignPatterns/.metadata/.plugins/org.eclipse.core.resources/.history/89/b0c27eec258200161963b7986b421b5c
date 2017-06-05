@@ -1,0 +1,7 @@
+package doorExample;
+
+import command.Command;
+
+public class GarageDoorOpenCommand implements Command{
+
+}

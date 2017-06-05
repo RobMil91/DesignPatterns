@@ -1,0 +1,27 @@
+package composition;
+
+public class MenuTestDrive {
+	
+	public static void main(String[] args) {
+		
+		
+		
+		/**
+		 * Create the single Menues
+		 */
+		MenuComponent pancakeHouseMenu = new Menu("PANCAKE HOUSE MENU", "Breakfast");
+		MenuComponent dinerMenu = new Menu("DINER MENU", "Lunch");
+		MenuComponent cafeMenu = new Menu("CAFE MENU", "Dinner");
+		MenuComponent dessertMenu = new Menu("DESSERT MENU", "Dessert stuff");
+		
+		
+		/**
+		 * need to create the top of the tree now
+		 * 
+		 */
+		MenuComponent allMenus = new Menu("ALL MENUS", "all the menus combined");
+		
+		allMenus.add(pancakeHouseMenu);
+	}
+
+}

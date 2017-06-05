@@ -1,0 +1,45 @@
+package gumballExample;
+
+public class NoQuarterState implements State {
+
+	GumballMachine gumballMachine;
+	
+	/**
+	 * Constructor with initates a Gumball Machine
+	 * @param gumballMachine
+	 */
+	public NoQuarterState(GumballMachine gumballMachine) {
+		this.gumballMachine = gumballMachine;
+	}
+	
+	@Override
+	public void insertQuarter() {
+		System.out.println("You inserted a Quarter");
+		/**
+		 * setting the gumballMachine to a different state
+		 * by using a basically static or object refernece in the gumball
+		 * Machine, feels more OO but still unnecassary?!
+		 */
+		gumballMachine.setState(gumballMachine.getHasQuarterState());
+		
+	}
+
+	@Override
+	public void ejectQuarter() {
+		System.out.println("I dont have a quarter, so i cant give it back, you didint insert it you thief!");
+		
+	}
+
+	@Override
+	public void turnCrank() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void dispense() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

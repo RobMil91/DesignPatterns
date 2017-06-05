@@ -1,0 +1,14 @@
+package ingredientFactory;
+
+public interface PizzaIngredientFactory {
+
+	//one new class per Ingredient!
+	public Dough createDough();
+	public Sauce createSauce();
+	public Cheese createCheese();
+	public Veggies[] createVeggies();
+	public Pepperoni createPepperoni();
+	public Clams createClam();
+	
+	
+}

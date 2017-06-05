@@ -1,0 +1,25 @@
+package gumBallRemoteJava;
+
+public class GumballMachineTestDrive {
+	
+	public static void main(String[] args) {
+		
+		//initiate a remote
+		GumballMachineRemote gumballMachine = null;
+		
+		int count = 5;
+		
+		
+		try {
+			
+			
+			gumballMachine = new GumballMachine(count, "San Francisco");
+		} catch ( Exception ex) {
+			ex.printStackTrace();
+		}
+	
+		
+		
+	}
+
+}

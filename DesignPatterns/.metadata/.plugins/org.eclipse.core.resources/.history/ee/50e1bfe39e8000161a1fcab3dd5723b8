@@ -1,0 +1,14 @@
+package ingredientFactory.ingredients.interfaces;
+
+public interface Clams {
+	
+	//no name can be initiated in an interface?!
+	//so subclass has to do it
+
+	/**
+	 * Ensure that Clams have to implement a toString Method!
+	 * @return
+	 */
+	public String toString();
+
+}

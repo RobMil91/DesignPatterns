@@ -1,0 +1,22 @@
+
+public class Singleton {
+
+	//the program wide reachable unqique instance
+	private static Singleton uniqueInstance;
+	
+	//private Constructor so you can only create the Singelton from within the class
+	 private Singleton() {};
+	 
+	 /**
+	  * Basically the getter for the Instance
+	  * it always returns the current Singleton
+	  * @return
+	  */
+	 public static Singleton getInstance() {
+		 if (uniqueInstance == null) {
+			 uniqueInstance = new Singleton();
+		 }
+	 }
+	 
+	 
+}

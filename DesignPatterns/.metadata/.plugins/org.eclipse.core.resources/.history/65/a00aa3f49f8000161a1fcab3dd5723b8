@@ -1,0 +1,7 @@
+package ingredientFactory.ingredients;
+
+
+public class holyClams implements Clams{
+	
+
+}

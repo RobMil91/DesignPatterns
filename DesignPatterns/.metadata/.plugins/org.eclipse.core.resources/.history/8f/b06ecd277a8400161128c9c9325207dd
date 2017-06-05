@@ -1,0 +1,26 @@
+package facade;
+
+import subsystem.*;
+
+/**
+ * this is the facade which includes all the
+ * subsystem classes
+ * @author robin
+ *
+ */
+public class HomeTheaterFacade {
+	
+	/**
+	 * private maybe not needed
+	 * here has to be the full subsystem
+	 */
+	private CdPlayer cdPlay;
+	private TV tv;
+	
+	public HomeTheaterFacade(CdPlayer cdPlay, TV tv) {
+		this.cdPlay = cdPlay;
+		this.tv = tv;
+	}
+	
+
+}

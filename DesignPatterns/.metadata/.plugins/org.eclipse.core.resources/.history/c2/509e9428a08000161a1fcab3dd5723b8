@@ -1,0 +1,18 @@
+package ingredientFactory.ingredients.interfaces;
+
+public interface Clams {
+	
+	//interfaces arent supposed to garantie attributes?!
+	//however they have to be initiated which feels bad..
+	//probably abstract class better choice for ingredient interfaces?!
+	public String name = null;
+
+	/**
+	 * Ensure that Clams have to implement a toString Method!
+	 * @return the name
+	 */
+	 String toString();
+	
+	void implementShit();
+
+}

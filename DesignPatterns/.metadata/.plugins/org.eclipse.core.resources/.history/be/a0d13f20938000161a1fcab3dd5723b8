@@ -1,0 +1,23 @@
+package ingredientFactory.pizza;
+
+import ingredientFactory.PizzaIngredientFactory;
+
+public class CheesePizza extends Pizza {
+	
+	//Ingredient Factory now instead of normal name sauce and so on
+	//its declared in super class..
+	PizzaIngredientFactory ingredientFactory;
+
+	
+	public CheesePizza(PizzaIngredientFactory ingredientFactory) {
+		this.ingredientFactory = ingredientFactory;
+	}
+	
+	@Override
+	void prepare() {
+		System.out.println("Preparing " + name);
+		dough 
+		
+	}
+
+}

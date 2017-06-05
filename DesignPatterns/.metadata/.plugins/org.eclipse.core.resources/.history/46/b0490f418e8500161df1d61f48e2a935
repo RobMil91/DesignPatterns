@@ -1,0 +1,32 @@
+package teaExample;
+
+/**
+ * probably the template
+ * @author robin
+ *
+ */
+public abstract class CaffeineBevarge {
+	
+	final void prepareRecipe() {
+		
+		//method that is always used
+		boilWater();
+		/**
+		 * method that varies in subclass
+		 * cause tea and coffe are made differntly
+		 */
+		brew();
+		//always the same
+		pourInCup();
+		
+		/**
+		 * definitly changes in the sublasses
+		 */
+		addCondiments();
+		
+	}
+	
+	
+	
+
+}

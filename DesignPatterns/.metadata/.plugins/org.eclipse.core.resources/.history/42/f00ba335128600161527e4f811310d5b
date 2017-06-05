@@ -1,0 +1,6 @@
+package gumBallRemote;
+
+public class GumballMonitor {
+
+	GumballMachine machine;
+}

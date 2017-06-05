@@ -1,0 +1,7 @@
+package gumBallRemoteJava;
+
+import java.rmi.*;
+
+public class GumballMachineRemote extends Remote{
+
+}

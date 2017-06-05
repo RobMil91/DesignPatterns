@@ -1,0 +1,10 @@
+package remoteControl;
+
+import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject;
+
+public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote{
+	
+	
+
+}

@@ -1,0 +1,15 @@
+
+/**
+ * specific command example
+ * @author robin
+ *
+ */
+public class LightOnCommand implements Command{
+
+	@Override
+	public void excecute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

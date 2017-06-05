@@ -1,0 +1,15 @@
+package doorExample;
+
+import simpleRemote.SimpleRemoteControl;
+
+public class RemoteGarageTest {
+	
+	SimpleRemoteControl remote = new SimpleRemoteControl();
+	
+	GarageDoor door = new GarageDoor();
+	
+	GarageDoorOpenCommand command = new GarageDoorOpenCommand(door);
+	
+	
+
+}

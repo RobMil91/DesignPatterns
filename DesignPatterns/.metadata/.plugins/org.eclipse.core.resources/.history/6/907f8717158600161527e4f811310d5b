@@ -1,0 +1,46 @@
+package remoteControl;
+
+import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject;
+
+public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote{
+	
+
+	//@Override override is not needed to declare that this is overwritten..
+	public String sayHello() throws RemoteException {
+		// TODO Auto-generated method stub
+		return "Server say, 'Hey'";
+	};
+	
+	
+	
+	
+	public MyRemoteImpl()throws RemoteException{}
+	
+	/**
+	 * 
+	 * -----------------------------------a Main Method in my Implementation??? feels bad man...
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		try {
+			/**
+			 * Call my own Class!!!
+			 * 
+			 * this binds my service to the RMI registery
+			 */
+			MyRemote service = new MyRemoteImpl();
+			Naming.rebind("RemoteHello", service);
+			//feels but to catch the on top Exception class
+		} catch(Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+
+
+	
+	
+
+}

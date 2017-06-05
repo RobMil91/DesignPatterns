@@ -1,0 +1,7 @@
+package ingredientFactory.ingredients;
+
+import java.beans.VetoableChangeListener;
+
+public class Garlic implements Veggies {
+
+}

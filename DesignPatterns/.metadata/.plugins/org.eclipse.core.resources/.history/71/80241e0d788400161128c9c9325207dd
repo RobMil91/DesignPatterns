@@ -1,0 +1,24 @@
+package adapter;
+
+public class DuckTestDrive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MallardDuck duck = new MallardDuck();
+		
+		Wildturkey turkey = new Wildturkey();
+		
+		/**
+		 *  I should now have a class which wants to use ducks
+		 *  but i also wanna include my turkey, i would add 
+		 *  an adapter then..
+		 */
+
+		
+		System.out.println("The Turkey says...");
+		turkey.gobble();
+		turkey.fly();
+	}
+
+}

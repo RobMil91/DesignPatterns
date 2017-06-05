@@ -1,0 +1,35 @@
+package ingredientFactory;
+
+
+public class ChicagoPizzaStore extends PizzaStore {
+
+	protected Pizza createPizza(String item) {
+		
+		Pizza pizza = null;
+		//most important initalisation for an NYPizzaStore! The ingredient factory also has to be
+		//NY!
+		PizzaIngredientFactory ingredientFactory = new ChicagoIngredientFactory();
+		
+		
+		if (item.equals("cheese")) {
+
+			//let the CheesePizza use the ingredientFactory of NY 
+			pizza = new CheesePizza(ingredientFactory);
+			//name the pizza to be clear what is used
+			pizza.setName("New York Style Cheese Pizza");
+			
+		} else if (item.equals("veggie")) {
+			
+			pizza = new VeggiePizza(ingredientFactory);
+			pizza.setName("New York Style Veggie Pizza");
+		} else if (item.equals("clam")) {
+			
+			pizza = new ClamPizza(ingredientFactory);
+			pizza.setName("New York Style Clam Pizza");
+		}
+		
+		//in case of wrong String item it will be null...
+		return pizza;
+	}
+
+}

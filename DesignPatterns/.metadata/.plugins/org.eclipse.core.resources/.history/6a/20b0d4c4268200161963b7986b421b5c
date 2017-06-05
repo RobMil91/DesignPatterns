@@ -1,0 +1,13 @@
+package doorExample;
+
+import command.Command;
+
+public class GarageDoorOpenCommand implements Command{
+
+	@Override
+	public void excecute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

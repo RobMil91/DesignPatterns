@@ -1,0 +1,10 @@
+package facade;
+
+/**
+ * The facade Patter
+ * @author robin
+ *
+ */
+public class HomeTheatherFacade {
+
+}

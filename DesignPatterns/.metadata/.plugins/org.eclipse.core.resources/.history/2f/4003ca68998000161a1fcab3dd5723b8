@@ -1,0 +1,13 @@
+package ingredientFactory.ingredients;
+
+/**
+ * From figure in book i use interface 
+ * @author robin
+ *
+ */
+public class ThinCrustDough implements Dough {
+	
+	//no usefull code as off now
+	//could however add funcaionality to the interface
+
+}

@@ -1,0 +1,40 @@
+package composition;
+
+/**
+ * Composition pattern
+ * @author robin
+ *
+ */
+public abstract class MenuComponent {
+
+	/**
+	 *  method use its own class to add it to its structure
+	 * @param menuComp
+	 */
+	public void add(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public void remove(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public void getChild(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public void getName(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public void getDescription(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	
+}

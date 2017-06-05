@@ -1,0 +1,26 @@
+package example;
+
+import basic.Singleton;
+
+public class NoCreationSingelton {
+	
+	/**
+	 * ----------------------------------the class is always initiated------------------------------
+	 * if it is not needed it was a waste...
+	 * but this ensure it cant be created twice?!
+	 */
+	private static NoCreationSingelton uniqueInstance = new NoCreationSingelton();
+	
+	//private Constructor so you can only create the Singelton from within the class
+	 private NoCreationSingelton() {};
+	 
+
+	 public static Singleton getInstance() {
+
+		 //interesting that you can't call it by this. or class name
+		 //its private but still in the class?
+		 return uniqueInstance;
+	 }
+	 
+
+}

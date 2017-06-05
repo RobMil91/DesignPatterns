@@ -1,0 +1,10 @@
+package ingredientFactory.ingredients;
+
+/**
+ * OWN implementation the way i see fit!
+ * @author robin
+ *
+ */
+public class ThinCrustDough extends Dough {
+
+}

@@ -1,0 +1,19 @@
+
+public class SimpleRemoteControl {
+	
+	Command slot;
+	
+	public SimpleRemoteControl() {
+		
+	}
+	
+	/**
+	 * Method to add a command to the Controller
+	 * @param command
+	 */
+	public void setCommand(Command command) {
+		
+		slot = command;
+	}
+
+}

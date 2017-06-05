@@ -1,0 +1,15 @@
+INDEX VERSION 1.127+/home/robin/Workspaces/DesignPatterns/.metadata/.plugins/org.eclipse.jdt.core
+1229759899.index
+1654523058.index
+1026561065.index
+3718601371.index
+4212491300.index
+3030532360.index
+1704262051.index
+3497746505.index
+2906833436.index
+682280859.index
+1684551915.index
+3430742664.index
+2734245815.index
+2066620564.index

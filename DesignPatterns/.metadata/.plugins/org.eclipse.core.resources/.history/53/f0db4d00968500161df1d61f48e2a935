@@ -1,0 +1,12 @@
+package iterator;
+
+public class DinerMenu {
+
+	static final int Max_ITEMS = 6;
+	int numberOfItems = 0;
+	
+
+	public DinerMenu(int numberOfItems) {
+		this.numberOfItems = numberOfItems;
+	}
+}

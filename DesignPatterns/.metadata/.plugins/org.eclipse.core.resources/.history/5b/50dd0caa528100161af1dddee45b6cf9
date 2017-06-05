@@ -1,0 +1,8 @@
+
+public class Singleton {
+
+	
+	//private Constructor so you can only create the Singelton from within the class
+	 private Singleton() {};
+	 
+}

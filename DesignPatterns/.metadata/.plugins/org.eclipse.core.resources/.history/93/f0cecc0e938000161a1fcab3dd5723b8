@@ -1,0 +1,20 @@
+package ingredientFactory.pizza;
+
+public class CheesePizza extends Pizza {
+	
+	//Ingredient Factory now instead of normal name sauce and so on
+	//its declared in super class..
+
+	
+	public CheesePizza() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	void prepare() {
+		System.out.println("Preparing " + name);
+		dough 
+		
+	}
+
+}

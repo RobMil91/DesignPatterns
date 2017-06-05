@@ -1,0 +1,11 @@
+package doorExample;
+
+public class GarageDoor {
+	
+	Boolean open;
+	
+	public void open() {
+		System.out.println("door is open");
+	}
+
+}

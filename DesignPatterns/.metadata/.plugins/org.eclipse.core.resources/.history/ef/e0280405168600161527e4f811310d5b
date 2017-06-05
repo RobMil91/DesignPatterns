@@ -1,0 +1,20 @@
+package remoteControl;
+
+import java.rmi.*;
+
+public class MyRemoteClient {
+	
+	/**
+	 * My implementations always have a main method it seem were they
+	 * initiate themselves
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		new MyRemoteClient().go();
+	}
+	
+	public void go() {
+		
+	}
+
+}

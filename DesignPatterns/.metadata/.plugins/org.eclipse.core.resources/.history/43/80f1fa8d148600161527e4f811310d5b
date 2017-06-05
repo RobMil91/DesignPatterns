@@ -1,0 +1,33 @@
+package remoteControl;
+
+import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject;
+
+public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote{
+	
+
+	//@Override override is not needed to declare that this is overwritten..
+	public String sayHello() throws RemoteException {
+		// TODO Auto-generated method stub
+		return "Server say, 'Hey'";
+	};
+	
+	
+	
+	
+	public MyRemoteImpl()throws RemoteException{}
+	
+	public static void main(String[] args) {
+		
+		
+		try {
+			MyRemote service = new MyRemoteImpl();
+			
+		}
+	}
+
+
+	
+	
+
+}

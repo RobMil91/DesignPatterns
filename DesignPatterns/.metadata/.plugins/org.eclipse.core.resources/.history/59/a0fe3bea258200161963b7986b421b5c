@@ -1,0 +1,5 @@
+package doorExample;
+
+public class GarageDoorOpenCommand {
+
+}

@@ -1,0 +1,19 @@
+
+public class Light {
+	
+	Boolean glowing;
+	
+	public Light() {
+		glowing = false;
+	}
+	
+	
+	public void on() {
+		glowing = true;
+	}
+	
+	public void off() {
+		glowing = false;
+	}
+
+}

@@ -1,0 +1,16 @@
+package command;
+
+/**
+ * Encapsulates an ammount of commands into one
+ * @author robin
+ *
+ */
+public class MacroCommand implements Command{
+
+	@Override
+	public void excecute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

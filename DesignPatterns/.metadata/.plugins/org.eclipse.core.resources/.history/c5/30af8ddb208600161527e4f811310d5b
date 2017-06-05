@@ -1,0 +1,25 @@
+package ducks;
+
+/**
+ * Introduce the decorator Pattern to the mix
+ * @author robin
+ *
+ */
+public class QuackCounter implements Quackable{
+	
+	Quackable duck;
+	
+	static int numberOfQuacks;
+	
+	public QuackCounter(Quackable duck) {
+		// TODO Auto-generated constructor stub
+		
+	}
+
+	@Override
+	public void quack() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

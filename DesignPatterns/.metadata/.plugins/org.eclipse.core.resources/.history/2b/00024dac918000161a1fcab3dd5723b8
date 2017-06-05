@@ -1,0 +1,64 @@
+package ingredientFactory.pizza;
+
+import java.util.ArrayList;
+
+/**
+ * "Abstract" Interface for pizzas
+ * @author robin
+ *
+ */
+public abstract class Pizza {
+
+	String name;
+	String dough;
+	String sauce;
+    Veggies veggies[];
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clams clam;
+    
+	//no constructor initiaten?!
+	//shoudn't i declare an abstract connstructor so i dont forget to initated the
+	//specialized behavior?
+    
+    //has now to be implemented instead of beining given by pizzas interface
+    abstract void prepare();
+	
+	
+	
+	
+
+	
+	
+
+	
+	/**
+	 * the following methods are std values for a pizza they can be changed 
+	 * but if not they still profide the standart 
+	 */
+	
+	 void bake() {
+		System.out.println("Bake for 25 minutes at 350");
+	}
+	
+	 void cut() {
+		System.out.println("Cutting the pizza into diagonal slices");
+	}
+	
+	 void box() {
+		System.out.println("Place pizza in offical PizzaStore box");
+	}
+	
+	 String getName() {
+		return this.name;
+	}
+	 
+	 void setName(String name) {
+		this.name = name;
+	}
+	 
+	 public String toString() {
+		 //toDo code for pizza print
+	 }
+	
+}

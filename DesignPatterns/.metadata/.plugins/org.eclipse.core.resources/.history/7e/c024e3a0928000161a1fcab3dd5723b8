@@ -1,0 +1,5 @@
+package ingredientFactory.pizza;
+
+public class CheesePizza {
+
+}

@@ -1,0 +1,20 @@
+package iterator;
+
+public class MenuItem {
+
+	String name;
+	String descr;
+
+	boolean vege;
+	double price;
+	
+
+	public MenuItem(String name, String descr, boolean vege, double price) {
+		this.name = name;
+		this.descr = descr;
+		this.vege = vege;
+		this.price = price;
+	}
+
+
+}

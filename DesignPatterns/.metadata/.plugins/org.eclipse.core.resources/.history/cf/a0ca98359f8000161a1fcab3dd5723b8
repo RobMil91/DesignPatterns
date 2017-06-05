@@ -1,0 +1,9 @@
+package ingredientFactory.ingredients;
+
+import ingredientFactory.ingredients.interfaces.Clams;
+
+public class FreshClams implements Clams {
+	
+	
+
+}

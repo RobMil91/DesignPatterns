@@ -1,0 +1,55 @@
+package ducks;
+
+import patternVersion.DuckSimulator;
+
+public class SimDecorator {
+	
+	public static void main(String[] args) {
+		SimDecorator simu = new SimDecorator();
+		simu.simulate();
+	}
+	
+	void simulate() {
+		
+		/**
+		 * adding the quackable class before every object creation
+		 */
+		//create ducks
+		Quackable mallardDuck = new QuackCounter(new MallardDuck());
+		Quackable redheadDuck = new QuackCounter(new RedHeadDuck());
+		Quackable duckcall = new QuackCounter(new DuckCall());
+		Quackable rubberDuck = new QuackCounter(new RubberDuck());
+		/**
+		 * adding an adapted goose
+		 * basically adding the adapter pattern into the mix
+		 */
+		Goose goose = new Goose();
+		Quackable gooseDuck = new GooseAdapter(goose);
+		
+		
+		
+		System.out.println("\nDuck Simulator: With Decorator");
+		
+		
+		
+		simulate(mallardDuck);
+		simulate(rubberDuck);
+		simulate(duckcall);
+		simulate(redheadDuck);
+		simulate(gooseDuck);
+		
+		//---------------------------------------------------also simulate the amount of quacks now
+		//this is extra behavior typically for the decorator
+		System.out.println("The Ducks quacked" + QuackCounter.getQuacks() + " times");
+		
+	}
+	
+	void simulate(Quackable duck) {
+		
+		duck.quack();
+		
+	}
+
+}
+
+

@@ -1,0 +1,21 @@
+package teaExample;
+
+public class Tea  extends CaffeineBevarge{
+
+	/**
+	 * implement the method from Caffeine Beverage!
+	 */
+	@Override
+	void brew() {
+		System.out.println("Steeping the tea");
+		
+	}
+
+	@Override
+	void addCondiments() {
+		//  Auto-generated method stub from Caffeine Beverage!
+		System.out.println("Adding Lemon");
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+package gumballExample;
+
+public class NoQuarterState implements State {
+
+	GumballMachine gumballMachine;
+	
+	/**
+	 * Constructor with initates a Gumball Machine
+	 * @param gumballMachine
+	 */
+	public NoQuarterState(GumballMachine gumballMachine) {
+		this.gumballMachine = gumballMachine;
+	}
+	
+	@Override
+	public void insertQuarter() {
+		System.out.println("You inserted a Quarter");
+		gumballMachine.setState(gumballMachine.getHasQuarterState());
+		
+	}
+
+	@Override
+	public void ejectQuarter() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void turnCrank() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void dispense() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

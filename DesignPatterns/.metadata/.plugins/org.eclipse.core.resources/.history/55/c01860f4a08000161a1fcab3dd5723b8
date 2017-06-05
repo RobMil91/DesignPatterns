@@ -1,0 +1,23 @@
+package ingredientFactory.ingredients;
+
+import ingredientFactory.ingredients.interfaces.Clams;
+
+public class FrozenClam implements Clams {
+	
+	/**
+	 * name can be privat in the lower subclasses i think
+	 * maybe protected if you wanna create further dependencies
+	 */
+	private String name;
+	
+	public FreshClams() {
+		this.name = "Fresh Clam";
+	}
+
+	@Override
+	public void implementShit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

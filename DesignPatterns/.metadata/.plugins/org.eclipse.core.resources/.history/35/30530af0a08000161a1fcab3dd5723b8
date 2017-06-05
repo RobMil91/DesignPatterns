@@ -1,0 +1,13 @@
+package ingredientFactory.ingredients;
+
+import ingredientFactory.ingredients.interfaces.Clams;
+
+public class FrozenClam implements Clams {
+
+	@Override
+	public void implementShit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

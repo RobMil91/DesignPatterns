@@ -1,0 +1,12 @@
+package facade;
+
+/**
+ * this is the facade which includes all the
+ * subsystem classes
+ * @author robin
+ *
+ */
+public class HomeTheaterFacade {
+	
+
+}

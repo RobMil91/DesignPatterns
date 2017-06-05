@@ -1,0 +1,9 @@
+package doorExample;
+
+public class GarageDoor {
+	
+	public void open() {
+		System.out.println("door is open");
+	}
+
+}

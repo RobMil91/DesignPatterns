@@ -1,0 +1,18 @@
+package gumballExample;
+
+public class GumballMachine {
+
+	/**
+	 * use clases of the Interface State
+	 * 
+	 */
+	State soldOutState;
+	State noQuarterState;
+	State hasQuarterState;
+	State soldState;
+	
+	State state = soldOutState;
+	int count = 0;
+	
+	
+}

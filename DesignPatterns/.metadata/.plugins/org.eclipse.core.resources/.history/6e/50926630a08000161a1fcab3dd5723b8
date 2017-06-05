@@ -1,0 +1,7 @@
+package ingredientFactory.ingredients;
+
+import ingredientFactory.ingredients.interfaces.Clams;
+
+public class FrozenClam implements Clams {
+
+}

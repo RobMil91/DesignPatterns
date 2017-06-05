@@ -1,0 +1,17 @@
+package teaExample;
+
+public class Coffee extends CaffeineBevarge {
+
+	@Override
+	void brew() {
+		// TODO Auto-generated method stub
+		System.out.println("Dripping Coffe through a filter");
+	}
+
+	@Override
+	void addCondiments() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

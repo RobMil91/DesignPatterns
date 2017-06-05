@@ -1,0 +1,17 @@
+package ducks;
+
+public class DuckSimulator {
+	
+	public static void main(String[] args) {
+		DuckSimulator simu = new DuckSimulator();
+		simu.simulate();
+	}
+	
+	vid simulate() {
+		
+		Quackable mallardDuck = new MallardDuck();
+		Quackable redheadDuck = new RedHeadDuck();
+		Quackable duckcall = new DuckCall();
+	}
+
+}

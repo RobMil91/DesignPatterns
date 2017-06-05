@@ -1,0 +1,20 @@
+package ingredientFactory;
+
+import ingredientFactory.ingredients.Cheese;
+import ingredientFactory.ingredients.Clams;
+import ingredientFactory.ingredients.Dough;
+import ingredientFactory.ingredients.Sauce;
+import ingredientFactory.ingredients.Veggies;
+
+public interface PizzaIngredientFactory {
+
+	//one new class per Ingredient!
+	public Dough createDough();
+	public Sauce createSauce();
+	public Cheese createCheese();
+	public Veggies[] createVeggies();
+	public Pepperoni createPepperoni();
+	public Clams createClam();
+	
+	
+}

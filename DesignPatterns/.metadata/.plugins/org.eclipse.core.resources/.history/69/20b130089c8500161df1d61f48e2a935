@@ -1,0 +1,78 @@
+package composition;
+
+/**
+ * Composition pattern
+ * @author robin
+ *
+ */
+public abstract class MenuComponent {
+
+	/**
+	 *  method use its own class to add it to its structure
+	 * @param menuComp
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * here come the Menu composition methods
+	 */
+	public void add(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public void remove(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	/**
+	 * 
+	 * @param ispecific attribute for datastructure
+	 */
+	public void getChild(int i) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	
+	
+	
+	
+	/**
+	 * Here are tje "operation methods"
+	 * they are used by the MenuItems
+	 * 
+	 * 
+	 * 
+	 */
+	
+	
+	public void getName() {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public void getDescription() {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public void getPrice() {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public boolean isVegetarian() {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	public void print() {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	
+}

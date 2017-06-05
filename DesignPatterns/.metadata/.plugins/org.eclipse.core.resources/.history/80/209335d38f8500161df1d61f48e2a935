@@ -1,0 +1,19 @@
+package teaExample;
+
+public class testTemplateMethod {
+
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println("make a tea");
+		Tea tea = new Tea();
+		
+		//call the entire Template Method
+		tea.prepareRecipe();
+		
+		Coffee cof = new Coffee();
+		
+		cof.prepareRecipe();
+	}
+}

@@ -1,0 +1,28 @@
+package features;
+
+import ingredientFactory.*;
+import ingredientFactory.NYPizzaStore;
+import ingredientFactory.Pizza;
+import ingredientFactory.PizzaStore;
+//Main class doesnt have to important anyth ingredients?!
+//this supposed to be so?
+
+public class AbstractFactoryTestDrive {
+	
+	public static void main(String[] args) {
+		//create to stores
+		PizzaStore nyStore = new NYPizzaStore();
+		PizzaStore chicagoStore = new ChicagoPizzaStore();
+
+		//create an NY cheese pizza
+		Pizza pizza = nyStore.orderPizza("cheese");
+		System.out.println("Ordered a Cheese Pizza from nyStore " + pizza.getName() + "\n");
+		
+		//create an NY cheese pizza
+		//very weird to use the same object pizza for a different pizza it overwrites the old pizza..
+		 pizza = chicagoStore.orderPizza("cheese");
+		System.out.println("Ordered a Cheese Pizza from chicago store " + pizza.getName() + "\n");
+		
+	}
+
+}

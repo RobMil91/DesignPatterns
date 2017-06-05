@@ -1,0 +1,13 @@
+package example;
+/**
+ * A Chocalate Boiler which has boild milk and choclate together
+ * should be initiated only once
+ * @author robin
+ *
+ */
+public class ChocalateBoiler {
+
+	private boolean empty;
+	private boolean boiled;
+	
+}

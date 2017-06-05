@@ -1,0 +1,10 @@
+package facade;
+
+/**
+ * one class of the subsystem
+ * @author robin
+ *
+ */
+public class TV {
+
+}

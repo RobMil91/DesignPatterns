@@ -1,0 +1,16 @@
+package ingredientFactory.ingredients.interfaces;
+
+public interface Clams {
+	
+	//no name can be initiated/garantied in an interface?!
+	//so subclass has to do it
+	//could however create an abstract class which would use 
+	public String name;
+
+	/**
+	 * Ensure that Clams have to implement a toString Method!
+	 * @return
+	 */
+	public String toString();
+
+}

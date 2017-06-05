@@ -1,0 +1,7 @@
+package remoteControl;
+
+import java.rmi.*;
+
+public class MyRemoteClient {
+
+}

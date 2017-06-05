@@ -1,0 +1,15 @@
+package gumBallRemote;
+
+/**
+ * class to report the behavior of the gumballmachine
+ * @author robin
+ *
+ */
+public class GumballMonitor {
+
+	GumballMachine machine;
+	
+	public GumballMonitor(GumballMachine machine) {
+		this.machine = machine;
+	}
+}

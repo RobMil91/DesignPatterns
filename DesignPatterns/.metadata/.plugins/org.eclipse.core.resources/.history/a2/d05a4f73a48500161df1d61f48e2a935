@@ -1,0 +1,36 @@
+package composition;
+
+import java.util.*;
+
+/**
+ * has to implement the Iterator interface
+ * in order to be used as such
+ * @author robin
+ *
+ */
+public class CompositeIterator implements Iterator {
+	
+	/**
+	 * use a Stack now?!
+	 */
+	Stack stack = new Stack();
+
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

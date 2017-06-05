@@ -1,0 +1,38 @@
+package ingredientFactory.pizzaStores;
+import pizzas.*;
+
+/**
+ * Headclass of package(all extend from here)
+ * The Pizzastore is the super class for all
+ * "franchise" sub stores like NyPizzaStore and so on
+ * @author robin
+ *
+ */
+public abstract class PizzaStore {
+
+	
+public Pizza orderPizza(String type) {
+		
+		Pizza pizza;
+		
+		//hide the new and the code that changes in that class
+		pizza = createPizza(type);
+		
+		
+		pizza.prepare();
+		pizza.bake();
+		pizza.cut();
+		pizza.box();
+		
+		return pizza;
+		
+	}
+/**
+ * this garanties that the subclass has to implement the method used above
+ * this ensures that the "franchise" store has to implement his own createPizza
+ * were he can add his own functionallaty
+ * @param type name of pizza
+ * @return Pizza
+ */
+abstract Pizza createPizza(String type);
+}

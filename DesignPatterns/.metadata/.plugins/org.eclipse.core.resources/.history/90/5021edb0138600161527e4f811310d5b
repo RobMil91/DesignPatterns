@@ -1,0 +1,14 @@
+package remoteControl;
+
+import java.rmi.*;
+
+/**
+ * MyRemote is an interface and Remote is the Interface
+ * of rmi that i extend(inherit) from
+ * @author robin
+ *
+ */
+public interface MyRemote extends Remote{
+	
+
+}

@@ -1,0 +1,13 @@
+package ingredientFactory.ingredients.interfaces;
+
+
+public class holyClams implements Clams{
+
+	@Override
+	public void implementShit() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

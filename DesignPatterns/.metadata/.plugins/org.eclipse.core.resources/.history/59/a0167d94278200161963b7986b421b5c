@@ -1,0 +1,20 @@
+package doorExample;
+
+import command.Command;
+
+public class GarageDoorOpenCommand implements Command{
+	
+	GarageDoor door;
+	
+	public GarageDoorOpenCommand(GarageDoor door) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void excecute() {
+		// TODO Auto-generated method stub
+		
+		door.open();
+	}
+
+}

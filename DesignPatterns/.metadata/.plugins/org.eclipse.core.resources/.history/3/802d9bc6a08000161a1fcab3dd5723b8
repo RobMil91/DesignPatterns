@@ -1,0 +1,29 @@
+package ingredientFactory.ingredients;
+
+import ingredientFactory.ingredients.interfaces.Clams;
+
+/**
+ * Interface doesn't force the name and the method????
+ * @author robin
+ *
+ */
+public class FreshClams implements Clams {
+
+	String name;
+	
+	public FreshClams() {
+		this.name = "Fresh Clam";
+	}
+	
+	/**
+	 * just a reminader that the interface could/should force some behaviour into the subclasses
+	 */
+	@Override
+	public void implementShit() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,72 @@
+package gumballExample;
+
+public class GumballMachine {
+
+	/**
+	 * use clases of the Interface State
+	 * 
+	 */
+	State soldOutState;
+	State noQuarterState;
+	State hasQuarterState;
+	State soldState;
+
+
+	State state = soldOutState;
+	//to keep track how often the State changed?
+	int count = 0;
+	
+	public GumballMachine(int gumballs) {
+		this.count = gumballs;
+		soldOutState = new SoldOutState(this);
+		noQuarterState = new NoQuarterState(this);
+		
+	}
+	
+	
+	
+	/**
+	 * Set state Method so the No Quarter State can change the state of the machine!
+	 */
+	public void setState(State state) {
+		this.state = state;
+	}
+	
+	
+	void releaseBall() {
+		System.out.println("A gumball is rolling out...  ");
+		if (count != 0) {
+			count = count - 1;
+		}
+	}
+	
+	
+	
+	//-----------------------------more methods with getters and for count of gumballs and so on
+	
+	
+	public State getSoldOutState() {
+		return soldOutState;
+	}
+
+
+	public State getNoQuarterState() {
+		return noQuarterState;
+	}
+
+
+	public State getHasQuarterState() {
+		return hasQuarterState;
+	}
+
+
+	public State getSoldState() {
+		return soldState;
+	}
+
+
+	public int getCount() {
+		return count;
+	}
+
+}

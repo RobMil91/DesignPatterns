@@ -1,0 +1,11 @@
+package ingredientFactory.ingredients.interfaces;
+
+public interface Clams {
+
+	/**
+	 * Ensure that Clams have to implement a toString Method!
+	 * @return
+	 */
+	String toString();
+
+}

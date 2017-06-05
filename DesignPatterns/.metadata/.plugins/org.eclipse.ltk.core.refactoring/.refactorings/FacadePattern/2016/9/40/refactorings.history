@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;FacadePattern/src/subsystem&apos;&#x0A;- Original project: &apos;FacadePattern&apos;&#x0A;- Destination element: &apos;FacadePattern/src/subsystem&apos;&#x0A;- Original elements:&#x0A;     facade.TV.java&#x0A;     facade.CdPlayer.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;subsystem" element1="/src&lt;facade{TV.java" element2="/src&lt;facade{CdPlayer.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1474956860570" units="2" version="1.0"/>
+</session>

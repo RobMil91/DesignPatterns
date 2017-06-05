@@ -1,0 +1,14 @@
+package ingredientFactory.ingredients;
+
+import ingredientFactory.ingredients.interfaces.Clams;
+
+/**
+ * Interface doesnt force the name and the method????
+ * @author robin
+ *
+ */
+public class FreshClams implements Clams {
+	
+	
+
+}

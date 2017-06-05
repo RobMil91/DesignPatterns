@@ -1,0 +1,10 @@
+package ducks;
+
+/**
+ * Introduce the decorator Pattern to the mix
+ * @author robin
+ *
+ */
+public class QuackCounter {
+
+}

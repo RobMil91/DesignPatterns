@@ -1,0 +1,15 @@
+package gumballExample;
+
+public class GumMachineTest {
+	
+	public static void main(String[] args) {
+		
+		
+		//initiate a gumballmachine with 6 balls
+		GumballMachine gumballMachine = new GumballMachine(6);
+		
+		System.out.println(gumballMachine);
+		
+	}
+
+}

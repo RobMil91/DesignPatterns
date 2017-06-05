@@ -1,0 +1,25 @@
+package iterator.cafeExample;
+
+import iterator.MenuItem;
+
+import java.util.Hashtable;
+
+public class CafeMenu {
+	
+	Hashtable menuItems = new Hashtable();
+	
+	
+	public CafeMenu() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	public void addItem(String name, String desc, boolean vegeta, double price) {
+		
+		MenuItem menuItem = new MenuItem(name, desc, vegeta, price);
+		menuItems.put(menuItem.getName(), menuItem);
+		
+	}
+
+}

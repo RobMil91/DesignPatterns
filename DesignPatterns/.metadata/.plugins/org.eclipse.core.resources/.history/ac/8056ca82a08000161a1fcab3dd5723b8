@@ -1,0 +1,20 @@
+package ingredientFactory.ingredients;
+
+import ingredientFactory.ingredients.interfaces.Clams;
+
+/**
+ * Interface doesn't force the name and the method????
+ * @author robin
+ *
+ */
+public class FreshClams implements Clams {
+
+	@Override
+	public void implementShit() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

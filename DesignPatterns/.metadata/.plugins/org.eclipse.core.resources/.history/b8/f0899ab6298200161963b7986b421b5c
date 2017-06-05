@@ -1,0 +1,19 @@
+package remotes;
+
+import command.Command;
+
+public class RemoteControl {
+	
+	Command[] onCommands;
+	Command[] offCommands;
+	
+	/**
+	 * Constructor which sets and initates Arrays of Commands
+	 */
+	public RemoteControl() {
+		
+		onCommands = new Command[7];
+	}
+	
+
+}

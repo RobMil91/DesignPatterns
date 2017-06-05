@@ -1,0 +1,11 @@
+package remoteControl;
+
+import java.rmi.*;
+
+public class MyRemoteClient {
+	
+	public static void main(String[] args) {
+		new MyRemoteClient().go();
+	}
+
+}

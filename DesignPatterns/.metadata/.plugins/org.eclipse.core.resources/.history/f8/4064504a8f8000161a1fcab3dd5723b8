@@ -1,0 +1,5 @@
+package ingredientFactory;
+
+public class PizzaIngredientFactory {
+
+}

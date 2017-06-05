@@ -1,0 +1,16 @@
+package composition;
+
+public abstract class MenuComponent {
+
+	
+	public void add(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	public void remove(MenuComponent menuComp) {
+		
+		throw new UnsupportedOperationException("");
+	}
+	
+	
+}

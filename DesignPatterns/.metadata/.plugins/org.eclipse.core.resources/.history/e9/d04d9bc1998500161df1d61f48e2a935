@@ -1,0 +1,26 @@
+package iterator.cafeExample;
+
+import iterator.MenuItem;
+
+import java.util.Hashtable;
+
+public class CafeMenu {
+	
+	Hashtable menuItems = new Hashtable();
+	
+	
+	public CafeMenu() {
+		addItem("Veggie Burger", "Veggie s in  this burger", true, 3.99);
+		addItem("Burriot", "well afucking burrito", true, 4.29);
+	}
+	
+	
+	
+	public void addItem(String name, String desc, boolean vegeta, double price) {
+		
+		MenuItem menuItem = new MenuItem(name, desc, vegeta, price);
+		menuItems.put(menuItem.getName(), menuItem);
+		
+	}
+
+}

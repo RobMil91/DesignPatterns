@@ -1,0 +1,22 @@
+package ingredientFactory.pizza;
+
+import ingredientFactory.PizzaIngredientFactory;
+
+public class ClamPizza extends Pizza {
+	
+	//shoudnt i always have this in the superclass when i need to initiate it anyway?
+	PizzaIngredientFactory ingredientFactory;
+
+	
+	
+	public ClamPizza(PizzaIngredientFactory ingredientFactory) {
+		this.ingredientFactory = ingredientFactory;
+	}
+	
+	@Override
+	void prepare() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

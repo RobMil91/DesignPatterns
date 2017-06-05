@@ -1,0 +1,40 @@
+package teaExample;
+
+public abstract class CaffeineBeverageWithHook {
+	
+	final void prepareRecipe() {
+
+		boilWater();
+
+		brew();
+		pourInCup();
+		
+
+		//add the hook
+		if (customerWantsCondiments()) {
+			addCondiments();
+			
+		}
+	
+	}
+	
+	//-------------------------now primitiv methods!!!!!
+
+	abstract void brew();
+	abstract void addCondiments();
+	
+	/**
+	 * the always used method is implemented here
+	 * cause it doesnt change
+	 */
+	void boilWater() {
+		System.out.println("Boiling Water!");
+		
+	}
+	
+	void pourInCup() {
+		System.out.println("Pouring into Cup!");
+		
+	}
+
+}

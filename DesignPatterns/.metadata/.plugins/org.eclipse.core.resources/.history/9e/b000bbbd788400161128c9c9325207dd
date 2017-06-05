@@ -1,0 +1,61 @@
+package adapter;
+
+public class DuckTestDrive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MallardDuck duck = new MallardDuck();
+		
+		Wildturkey turkey = new Wildturkey();
+		
+		/**
+		 *  I should now have a class which wants to use ducks
+		 *  but i also wanna include my turkey, i would add 
+		 *  an adapter then..
+		 */
+
+		
+		System.out.println("The Turkey says...");
+		turkey.gobble();
+		turkey.fly();
+		
+		
+		System.out.println("\n the Duck says...");
+
+		testDuck(duck);
+		System.out.println("");
+		
+		//testDuck(turkey);
+		/**
+		 * would throw an wrong class exceptio or something
+		 * so how do i do this? -> add the adapter
+		 */
+		TurkeyAdapter turkeyAdapt = new TurkeyAdapter(turkey);
+		/**
+		 * now i have an turkeyAdapter which implements the interface duck!
+		 */
+		
+		/**
+		 * test the turkeyAdapt
+		 */
+		System.out.println("the turkey adapter says");
+		testDuck(turkeyAdapt);
+		
+	}
+
+	/**
+	 * i want this method to use a turkey
+	 * 
+	 * @param duck any class which implements the interface
+	 * duck, this is important i dont wanna change the code
+	 * here!! i want to create an object which fits here
+	 */
+	private static void testDuck(Duck duck) {
+		// TODO Auto-generated method stub
+		duck.quack();
+		duck.fly();
+		
+	}
+
+}

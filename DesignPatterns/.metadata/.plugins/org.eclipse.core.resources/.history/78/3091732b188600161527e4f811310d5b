@@ -1,0 +1,15 @@
+package gumBallRemoteJava;
+
+public class GumballMachineTestDrive {
+	
+	public static void main(String[] args) {
+		
+		//initiate a remote
+		GumballMachineRemote gumballMachine = null;
+		
+		int count = 5;
+		
+		
+	}
+
+}

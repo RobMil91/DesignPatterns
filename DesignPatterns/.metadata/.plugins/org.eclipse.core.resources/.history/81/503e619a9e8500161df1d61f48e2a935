@@ -1,0 +1,68 @@
+package composition;
+
+import java.util.ArrayList;
+
+/**
+ * also inherites the MenuComponent 
+ * so it can be identified as one
+ * @author robin
+ *
+ */
+public class Menu extends MenuComponent{
+
+	ArrayList menuComponents = new ArrayList();
+	String name;
+	String desc;
+	
+	
+	public Menu(String name, String desc) {
+		this.name = name;
+		this.desc = desc;
+	}
+	
+	/**
+	 * the overrides are voluntary but if you do at least the 
+	 * return type has to be the same
+	 */
+	//@override
+	public void add(MenuComponent menuComponent) {
+		menuComponents.add(menuComponent);
+	}
+	
+	//@override
+	public void remove(MenuComponent menuComponent) {
+		menuComponents.remove(menuComponent);
+	}
+	
+	//@override
+	public MenuComponent getChild(int i) {
+		return (MenuComponent)menuComponents.get(i);
+	}
+	
+	
+	
+	/**
+	 * 
+	 * 
+	 * 
+	 * ---------------------------the usual getters
+	 */
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public String getDesc() {
+		return desc;
+	}
+	
+	
+
+	public void print() {
+		System.out.println("\n" + getName());
+		System.out.println(",  " + getDescription());
+	}
+	
+}

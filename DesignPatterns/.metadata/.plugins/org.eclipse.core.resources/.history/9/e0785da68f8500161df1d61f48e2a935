@@ -1,0 +1,11 @@
+package teaExample;
+
+public class testTemplateMethod {
+
+	
+	public static void main(String[] args) {
+		
+		
+		Tea tea = new Tea();
+	}
+}

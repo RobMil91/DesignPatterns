@@ -1,0 +1,8 @@
+/**
+ * Test to check if lighOn Command is working
+ * @author robin
+ *
+ */
+public class RemoteControlTest {
+
+}

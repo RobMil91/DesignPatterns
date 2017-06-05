@@ -1,0 +1,14 @@
+package facade;
+
+public class testFacade {
+	
+	public static void main(String[] args) {
+		/**
+		 * Normally the Client is this method and gets a Facade
+		 * without having to initate the compoundens
+		 */
+		
+		HomeTheaterFacade fac = new HomeTheaterFacade(cdPlay, tv);
+	}
+
+}

@@ -1,0 +1,13 @@
+package example;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//how is this not a problem?
+		ChocalateBoiler boiler1 = ChocalateBoiler.getInstance();
+		ChocalateBoiler boiler2 = ChocalateBoiler.getInstance();
+		
+		System.out.println(boiler1.toString());
+	}
+}
